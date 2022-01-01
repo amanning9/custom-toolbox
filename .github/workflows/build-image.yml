@@ -13,7 +13,7 @@ jobs:
       uses: redhat-actions/buildah-build@v2
       with:
         image: fedora-toolbox-alex
-        tags: v1 ${{ github.sha }}
+        tags: latest 35 ${{ github.sha }}
         containerfiles: |
           ./Containerfile
 
