@@ -11,6 +11,7 @@ jobs:
 
     - name: Buildah Action
       uses: redhat-actions/buildah-build@v2
+      id: build-image
       with:
         image: fedora-toolbox-alex
         tags: latest 35 ${{ github.sha }}
