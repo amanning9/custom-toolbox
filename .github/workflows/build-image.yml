@@ -14,7 +14,7 @@ jobs:
       id: build-image
       with:
         image: fedora-toolbox-alex
-        tags: latest 35 ${{ github.sha }}
+        tags: latest 35 ${{ github.ref_name }}
         containerfiles: |
           ./Containerfile
 
